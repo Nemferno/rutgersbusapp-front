@@ -31,6 +31,7 @@ $RECYCLE.BIN/
 .gradle/
 android/
 e2e/
+package-lock.json
 
 .DS_Store
 Thumbs.db
