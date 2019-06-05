@@ -1,0 +1,19 @@
+<div class="backdrop" (click)="cancel()"></div>
+<div class="container">
+    <div class="inner-container">    
+        <div>{{ stop.stopname }}</div>
+        <hr>
+        <div class="subtitle">Remind me when the bus is coming in ...</div>
+        
+        <div class="choices">
+            <ion-button [ngClass]="{ 'selected': minutes===i }" class="choice" *ngFor="let i of [10,15,20,25]" (click)="select(i)">
+                {{ i }} minutes
+            </ion-button>
+        </div>
+        
+        <div class="decisions">
+            <ion-button class="cancel decision" (click)="cancel()">Cancel</ion-button>
+            <ion-button class="create decision" (click)="submit()">Create</ion-button>
+        </div>
+    </div>
+</div>

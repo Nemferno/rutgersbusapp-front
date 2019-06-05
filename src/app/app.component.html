@@ -1,0 +1,32 @@
+<ion-app>
+    <ion-menu menuId="main" side="start" class="custom-menu">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Rutgers University</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item [routerLink]="['/home']" button="true" lines="none">
+                    <ion-icon name="home" slot="start"></ion-icon>
+                    <ion-label>Schedules</ion-label>
+                </ion-item>
+                <ion-item [routerLink]="['/reminders']" button="true" lines="none">
+                    <ion-icon name="notifications" slot="start"></ion-icon>
+                    <ion-label>Reminders</ion-label>
+                </ion-item>
+                <ion-item [routerLink]="['/settings']" button="true" lines="none">
+                    <ion-icon name="settings" slot="start"></ion-icon>
+                    <ion-label>Settings</ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+        <ion-footer>
+            <ion-toolbar>
+                <ion-title>(c) Copyright 2019 Jasper Bae</ion-title>
+            </ion-toolbar>
+        </ion-footer>
+    </ion-menu>
+
+    <ion-router-outlet main></ion-router-outlet>
+</ion-app>

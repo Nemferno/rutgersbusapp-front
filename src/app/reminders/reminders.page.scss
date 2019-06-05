@@ -1,0 +1,62 @@
+ion-toolbar {
+    --background: #F7F0F0;
+}
+
+ion-content {
+    --background: #F7F0F0;
+    background-color: #F7F0F0;
+}
+
+ion-item {
+    box-shadow: 0px 0px 5px black;
+}
+
+hr {
+    background-color: black;
+    width: 100%;
+}
+
+#back-button {
+    color: white;
+    background-color: #1DC198;
+    box-shadow: 0px 0px 5px black;
+}
+
+.header {
+    padding: 0.5em;
+}
+
+.reminder-header {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+.sub-reminder-header {
+    width: 100%;
+}
+
+.reminder-detail {
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    margin: 0.5em;
+    box-shadow: 0px 0px 5px black;
+}
+
+.trash {
+    transform: translateY(-25%);
+    float: right;
+}
+
+.detail {
+    font-weight: 400;
+    font-size: 12px;
+}
+

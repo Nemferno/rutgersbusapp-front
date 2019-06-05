@@ -1,0 +1,6 @@
+<ion-content>
+    <div id="main">
+        <ion-icon id="icon-content" [@rotation]="(currentIconName === 'school') ? 'edu' : 'bus'" [name]="currentIconName"></ion-icon>
+        <div id="percent">{{ percent.toFixed(0) }}%</div>
+    </div>   
+</ion-content>

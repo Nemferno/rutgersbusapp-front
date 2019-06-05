@@ -1,0 +1,117 @@
+ion-toolbar {
+    --background: #F7F0F0;
+}
+
+ion-content {
+    --background: #F7F0F0;
+    background-color: #F7F0F0;
+}
+
+ion-grid {
+    --ion-grid-padding: 0.1em;
+}
+
+ion-grid ion-row {
+    margin: 0.5em;
+    margin-bottom: 2em;
+}
+
+ion-menu-button {
+    color: white;
+    background-color: #1DC198;
+    box-shadow: 0px 0px 5px black;
+}
+
+.nearList {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.stop {
+    margin: 0.5em;
+    box-shadow: 0px 0px 5px black;
+}
+
+.stop-container {
+    height: 100px;
+    text-align: left;
+    padding: 0.5em;
+}
+
+.stop-time {
+    // position: absolute;
+    text-align: center;
+    right: 1em;
+    transform: translateY(25%);
+}
+
+.minute {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.minute-label {
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.swiper-slide {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#near {
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+    padding: 0.5em;
+
+    height: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#far {
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+    padding: 0.5em;
+}
+
+.route {
+    box-shadow: 0px 0px 5px black;
+}
+
+.stop-header {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.stop-long-header {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.stop-very-long-header {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.stop-detail {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.stop-bus-status {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.route-header {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.route-direction {
+    font-weight: 100;
+    font-size: 13px;
+}

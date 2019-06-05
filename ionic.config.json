@@ -1,0 +1,9 @@
+{
+  "name": "RutgersBusApp-v4",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "dc29abd3"
+}

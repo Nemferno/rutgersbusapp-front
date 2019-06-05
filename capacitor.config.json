@@ -1,0 +1,8 @@
+{
+  "appId": "org.bae.rubow",
+  "appName": "RU Transit",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "allowMixedContent": true,
+  "capacitorPort": "8100"
+}

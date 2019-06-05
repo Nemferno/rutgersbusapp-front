@@ -1,0 +1,85 @@
+<ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button iconOnly id="back-button" (click)="back()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <div class="container">
+        <div class="header">Active Reminders</div>
+        <ion-list lines="none">
+            <ng-container *ngFor="let r of reminders">
+                <ion-item class="reminder-container">
+                    <ion-label class="reminder-sub-container" text-wrap>
+                        <div class="reminder-header">
+                            <div class="sub-reminder-header">
+                                <div>{{ r.stopname }}</div>
+                                <div>{{ r.routename }}</div>
+                            </div>
+                            <ion-button (click)="deleteReminder(r.reminderid)" class="trash" size="small" fill="clear" iconOnly slot="end">
+                                <ion-icon name="trash"></ion-icon>
+                            </ion-button>
+                        </div>
+                        <hr>
+                        <div class="reminder-detail">
+                            <span class="detail">Remind me when the bus is coming in {{ r.reminderduration }} minutes.</span>
+                            <ion-button (click)="editReminder(r)" class="trash" size="small" fill="clear" iconOnly slot="end">
+                                <ion-icon name="create"></ion-icon>
+                            </ion-button>
+                        </div>
+                        <hr>
+                    </ion-label>
+                </ion-item>
+            </ng-container>
+            <!-- <ion-item>
+                <ion-label class="reminder-container">
+                    <div class="reminder-header">
+                        <span>Livingston Plaza</span> : <span>On Time</span>
+                        <ion-button class="trash" size="small" fill="clear" iconOnly slot="end">
+                            <ion-icon name="trash"></ion-icon>
+                        </ion-button>
+                    </div>
+                    <hr>
+                    <div class="reminder-detail">
+                        <span class="detail">Remind me when the bus is coming in 5 minutes.</span>
+                        <ion-button class="trash" size="small" fill="clear" iconOnly slot="end">
+                            <ion-icon name="create"></ion-icon>
+                        </ion-button>
+                    </div>
+                    <hr>
+                </ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label class="reminder-container">
+                    <div class="reminder-header">
+                        <span>Livingston Plaza</span> : <span>On Time</span>
+                        <ion-button class="trash" size="small" fill="clear" iconOnly slot="end">
+                            <ion-icon name="trash"></ion-icon>
+                        </ion-button>
+                    </div>
+                    <hr>
+                    <div class="reminder-detail">
+                        <span class="detail">Remind me when the bus is coming in 5 minutes.</span>
+                        <ion-button class="trash" size="small" fill="clear" iconOnly slot="end">
+                            <ion-icon name="create"></ion-icon>
+                        </ion-button>
+                    </div>
+                    <hr>
+                    <div class="reminder-decide">
+                        <span>Forgot to decide:</span>
+                        <ion-buttons style="float: right">
+                            <ion-button>Cancel</ion-button>
+                            <ion-button>Continue</ion-button>
+                        </ion-buttons>
+                    </div>
+                </ion-label>
+            </ion-item> -->
+        </ion-list>
+    </div>
+</ion-content>

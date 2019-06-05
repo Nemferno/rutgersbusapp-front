@@ -1,0 +1,166 @@
+ion-toolbar {
+    --background: transparent;
+    position: absolute;
+}
+
+ion-content {
+    --background: #F7F0F0;
+    background-color: #F7F0F0;
+}
+
+.businfocontainer {
+
+}
+
+.businfo {
+    font-size: 13px;
+    font-weight: bold;
+    color: #43425D;
+}
+
+.sub-content {
+    --background: white;
+    min-height: 30vh;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+#back-button {
+    color: white;
+    background-color: #1DC198;
+    box-shadow: 0px 0px 5px black;
+}
+
+#map {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+.background {
+    background-color: #F7F0F0;
+    position: absolute;
+    height: 32px;
+    width: 100%;
+    display: block;
+    margin-top: -30px;
+}
+
+.foreground {
+    width: 80%;
+    left: 10%;
+    top: -32px;
+    display: block;
+    position: absolute;
+
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.header {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid gray;
+}
+
+ion-item > div.buspoint {
+    width: 36px;
+    height: 100%;
+}
+
+ion-item > div.buspoint::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+ion-item:first-child > div.buspoint::after {
+    left: 9px;
+    top: 10px;
+    color: white;
+    border: 4px solid #D80000;
+    border-radius: 50%;
+    background-color: currentColor;
+    box-shadow: 0 0 5px black;
+}
+
+ion-item > div.buspoint::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #D80000;
+    box-shadow: 0 0 3px black;
+    background-color: currentColor;
+}
+
+ion-item:first-child > div.buspoint::before {
+    border-radius: 100% 100% 0 0;
+}
+
+ion-item:last-child > div.buspoint::before {
+    border-radius: 0 0 100% 100%;
+    height: 100%;
+}
+
+ion-item:first-child:last-child > div.buspoint::before {
+    border-radius: 100% 100% 100% 100%;
+}
+
+ion-item:first-child:last-child > div.buspoint::after {
+    left: 9px;
+    top: 10px;
+    color: white;
+    border: 4px solid #D80000;
+    border-radius: 50%;
+    background-color: currentColor;
+    box-shadow: 0 0 5px black;
+}
+
+.arrival-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.arrival-status {
+    font-size: 13px;
+    font-style: italic;
+    color: #FF9964;
+}
+
+.stop-time {
+    position: absolute;
+    text-align: center;
+    right: 1em;
+    top: 10px;
+}
+
+.minute {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.minute-label {
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+#reminder {
+    position: absolute;
+    right: 68px;
+    top: -30px;
+}
+
+#navigation {
+    position: absolute;
+    right: 4px;
+    top: -30px;
+}
+
+#navigation > button, #reminder > button {
+    box-shadow: 0 0 5px black;
+}

@@ -1,0 +1,23 @@
+#main {
+    background-color: #FF2727;
+    width: 100%;
+    height: 100%;
+}
+
+#icon-content {
+    font-size: 128px;
+    position: absolute;
+    top: calc(50% - 64px);
+    left: calc(50% - 64px);
+    color: white;
+}
+
+#percent {
+    font-size: 64px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: calc(50% + 64px);
+    color: white;
+}

@@ -1,0 +1,81 @@
+ion-toolbar {
+    --background: #F7F0F0;
+}
+
+ion-content {
+    --background: #F7F0F0;
+    background-color: #F7F0F0;
+}
+
+[text-wrap].sc-ion-label-md-h {
+    line-height: initial;
+}
+
+#back-button {
+    color: white;
+    background-color: #1DC198;
+    box-shadow: 0px 0px 5px black;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 23px;
+    padding: 0.5em;
+}
+
+.long-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.container {
+    background-color: white;
+    margin: 0.5em;
+    box-shadow: 0px 0px 5px black;
+}
+
+.stop {
+    box-shadow: 0px 0px 5px black;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.label {
+    width: 100%;
+}
+
+.stop-header {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.stop-bus {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.stop-status {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 13px;
+    color: #FF9964;
+}
+
+.stop-time {
+    text-align: center;
+    right: 1em;
+}
+
+.minute {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.minute-label {
+    font-size: 18px;
+    margin-top: -10px;
+}

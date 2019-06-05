@@ -1,0 +1,43 @@
+<ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-button iconOnly id="back-button" (click)="back()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+    <div id="map"></div>
+    <div class="background">
+        <div class="foreground">
+            <ion-button id="reminder" iconOnly (click)="openReminder()">
+                <ion-icon name="notifications-outline"></ion-icon>
+            </ion-button>
+            <ion-button id="navigation" (click)="go()">Go!</ion-button>
+            <div class="header">{{ stop.stopname }}</div>
+            <ion-content class="sub-content">
+                <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+                    <ion-refresher-content></ion-refresher-content>
+                </ion-refresher>
+
+                <ion-list>
+                    <ng-container *ngIf="times">
+                        <ng-container *ngFor="let time of times.arrivals; let i = index">
+                            <ion-item button="true" lines="none" (click)="select(i)">
+                                <div class="buspoint"></div>
+                                <ion-label>
+                                    <div class="arrival-header">{{ route.routename }}</div>
+                                    <div>Bus #{{ time.busname }}</div>
+                                    <div class="stop-time">
+                                        <div class="minute">{{ time.minutes }}</div>
+                                        <div class="minute-label">min</div>
+                                    </div>
+                                </ion-label>
+                            </ion-item>
+                        </ng-container>
+                    </ng-container>
+                </ion-list>
+            </ion-content>
+        </div>
+    </div>
+</ion-content>
